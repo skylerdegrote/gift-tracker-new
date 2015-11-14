@@ -15,7 +15,7 @@ module.exports = function(grunt){
                 expand: true,
                 cwd: 'client/styles/',
                 src: [
-                    "styles.css"
+                    "general.css"
                 ],
                 "dest": "server/public/assets/styles/"
             },
@@ -25,7 +25,8 @@ module.exports = function(grunt){
                 src: [
                     'index.html',
                     'users.html',
-                    'register.html'
+                    'register.html',
+                    'home.html'
                 ],
                 "dest": "server/public/views/"
             },
