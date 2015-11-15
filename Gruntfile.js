@@ -8,6 +8,10 @@ module.exports = function(grunt){
             build: {
                 src: 'client/scripts/app.js',
                 dest: 'server/public/assets/scripts/app.min.js'
+            },
+            controller: {
+                src: 'client/scripts/controllers/controllers.js',
+                dest: 'server/public/assets/scripts/controllers.min.js'
             }
         },
         copy: {
@@ -25,8 +29,17 @@ module.exports = function(grunt){
                 src: [
                     'index.html',
                     'users.html',
+                    'login.html',
                     'register.html',
-                    'home.html'
+                    'home.html',
+                    'alloccasionts.html',
+                    'allpersons.html',
+                    'newgift.html',
+                    'newoccasion.html',
+                    'newperson.html',
+                    'occasion.html',
+                    'person.html',
+                    'userprofile.html'
                 ],
                 "dest": "server/public/views/"
             },
@@ -37,6 +50,12 @@ module.exports = function(grunt){
                 dest: 'server/public/vendors/'
             },
 
+            angularMaterial: {
+                expand:true,
+                cwd: 'node_modules',
+                src: 'angular-material/angular-material.css',
+                dest: 'server/public/vendors/'
+    }
         }
     });
 

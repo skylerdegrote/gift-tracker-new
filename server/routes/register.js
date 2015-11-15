@@ -6,7 +6,7 @@ var Users = require('../models/user');
 
 
 router.get('/', function(req, res, next){
-    res.sendFile(path.resolve(__dirname, '../public/views/register.html'));
+    res.sendFile(path.resolve(__dirname, '../public/views/login.html'));
 });
 
 router.post('/', function(req, res, next){
@@ -14,7 +14,7 @@ router.post('/', function(req, res, next){
         if(err)
             next("That User Already Exists");
         else
-            res.redirect('/views/users.html');
+            res.redirect('/views/index.html');
     })
 });
 
