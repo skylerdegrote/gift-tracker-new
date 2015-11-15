@@ -2,6 +2,9 @@
 
 var app = angular.module('giftApp', ['ngRoute', 'ngMaterial']);
 
+
+
+
 app.controller("SideNavController", ['$scope', '$mdSidenav', function($scope, $mdSidenav){
     console.log("side nav Controller Hit");
     $scope.toggleSidenav = function(menuId){
@@ -9,7 +12,7 @@ app.controller("SideNavController", ['$scope', '$mdSidenav', function($scope, $m
     };
 }]);
 
-app.controller('LoginController', ['$scope', '$mdToast', '$animate',
+app.controller('RegisterController', ['$scope', '$mdToast', '$animate',
     function($scope, $mdToast, $animate) {
         console.log("Login Controller Hit");
         //3. we decide where the toast will display on the view
@@ -40,7 +43,7 @@ app.controller('LoginController', ['$scope', '$mdToast', '$animate',
 
 
 
-]); //end login controller
+]); //end register controller
 
 
 
@@ -112,3 +115,5 @@ app.config(['$routeProvider', function($routeProvider){
             redirectTo: '/home'
         });
 }]);
+
+

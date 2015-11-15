@@ -1,22 +1,28 @@
-<div><h1>Log In</h1></div>
-<div>
-    <form action="/" method="post">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username"/>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password"/>
-        </div>
-        <div>
-            <input type="submit" value="Log In"/>
-            <a href="/register">Register</a>
-        </div>
 
-        <div>
-            <a href="/#home">guest</a>
-        </div>
-    </form>
 
+
+<div class="top" layout="column" offset-gt-lg="40" offset-gt-md="20" offset-gt-sm="10" offset-sm="0" offset="0">
+    <div class="center">
+
+        <div><h1>Log In</h1></div>
+        <form name="LogInForm" action="/" method="post">
+            <md-input-container>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username"/>
+            </md-input-container>
+            <md-input-container>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"/>
+            </md-input-container>
+            <md-input-container>
+                <input type="submit" value="Log In"/>
+                <a href="/#register">Register</a>
+            </md-input-container>
+
+            <md-input-container>
+                <a href="/#home">guest</a>
+            </md-input-container>
+        </form>
+
+    </div>
 </div>
